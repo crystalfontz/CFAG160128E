@@ -68,6 +68,7 @@
 //==============================================================================
 #define __AVR_ATmega32U4__ 
 #include <avr/io.h> 
+#include "CFAG160128E1_splash.h"
 
 //  Select the interface
 #define PAR_8080
@@ -152,7 +153,7 @@ void Fill_RAM(uint8_t Data)
     for (uint8_t x = 0; x < HRES / 8; x++)
     {
       writeData(Data);
-      delay(5);
+      delay(0); //slight delay needed when sending data
     }
   }
   writeCommand(0xB2); // auto write reset
@@ -162,7 +163,7 @@ void Fill_RAM(uint8_t Data)
 // showImage() takes an image out of flash and puts it on the screen. In this case,
 // the image stored in flash is the splash screen
 //================================================================================
-void showImage(const uint8_t image[7][128])
+void showImage(const uint8_t* image)
 {
   writeData(0x00);
   writeData(0x05);
@@ -175,7 +176,8 @@ void showImage(const uint8_t image[7][128])
 
     for (uint8_t x = 0; x < HRES / 8; x++)
     {
-      writeData(pgm_read_byte(&image[y][x]));
+      writeData(pgm_read_byte(&image[y*(HRES/8) + x]));
+      delay(0); //slight delay needed when sending data
     }
   }
 
@@ -254,6 +256,9 @@ void loop()
   delay(1000);
 
   Fill_RAM(0x00);
+  delay(1000);
+
+  showImage(*Mono_1BPP);
   delay(1000);
 }
 //================================================================================
