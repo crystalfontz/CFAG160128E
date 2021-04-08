@@ -1,12 +1,12 @@
-# CFAF240320A0-024Sx-A1
+# CFAG160128E
 
 Example Seeeduino (Arduino clone) code for the Crystalfontz CFAG160128E family of displays. More information about these displays can be found at the following links.
 
-[CFAG160128E1-TMI-TZ](https://www.crystalfontz.com/product/cfag160128e1tmitz)\
+[CFAG160128E1-STI-TZ](https://www.crystalfontz.com/product/cfag160128e1stitz)\
 [CFAG160128E-YYH-TZ](https://www.crystalfontz.com/product/cfag160128eyyhtz)
 
 This code is also compatible with this old version that has been replaced by the "E1"
-[CFAG160128E-TMI-TZ](https://www.crystalfontz.com/product/cfag160128etmitz)
+[CFAG160128E-STI-TZ](https://www.crystalfontz.com/product/cfag160128estitz)
 
 
 ## Connection Details
