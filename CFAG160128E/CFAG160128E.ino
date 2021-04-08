@@ -3,15 +3,15 @@
 //  CRYSTALFONTZ
 //
 //  This code drives the CFAG160128E family of displays
-//    https://www.crystalfontz.com/product/cfag160128etmitz
-//    https://www.crystalfontz.com/product/cfag160128e1tmitz
+//    https://www.crystalfontz.com/product/cfag160128estitz
+//    https://www.crystalfontz.com/product/cfag160128e1stitz
 //    https://www.crystalfontz.com/product/cfag160128eyyhtz
 //
-//  The controller is a Solomon Systech RA6963
+//  The controller is a Raio Technology RA6963L2NA 
 //    https://www.crystalfontz.com/controllers/Raio%20Technology/RA6963/
 //
 //  Seeeduino v4.2, an open-source 3.3v capable Arduino clone.
-//    https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html
+//    https://www.crystalfontz.com/product/cfapn15062-seeeduino-arduino-clone-microprocessor
 //    https://github.com/SeeedDocument/SeeeduinoV4/raw/master/resources/Seeeduino_v4.2_sch.pdf
 //
 //==============================================================================
